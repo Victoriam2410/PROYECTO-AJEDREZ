@@ -10,6 +10,7 @@ namespace AjedrezJuego
         private Label lblContrasena;
         private TextBox txtUsuario;
         private TextBox txtContrasena;
+        private Button btnEntrar;
 
 
         private const string USUARIO_CORRECTO = "admin";
@@ -41,7 +42,7 @@ namespace AjedrezJuego
             txtUsuario.Size = new System.Drawing.Size(170, 23);
             txtUsuario.Font = new System.Drawing.Font("Arial", 10);
              lblContrasena = new Label();
-             
+
             lblContrasena.Text = "Contraseña:";
             lblContrasena.Location = new System.Drawing.Point(60, 125);
             lblContrasena.Size = new System.Drawing.Size(90, 23);
@@ -52,6 +53,15 @@ namespace AjedrezJuego
             txtContrasena.Size = new System.Drawing.Size(170, 23);
             txtContrasena.Font = new System.Drawing.Font("Arial", 10);
             txtContrasena.PasswordChar = '*';
+            
+            btnEntrar = new Button();
+            btnEntrar.Text = "ENTRAR";
+            btnEntrar.Location = new System.Drawing.Point(140, 175);
+            btnEntrar.Size = new System.Drawing.Size(110, 35);
+            btnEntrar.Font = new System.Drawing.Font("Arial", 11, System.Drawing.FontStyle.Bold);
+            btnEntrar.BackColor = System.Drawing.Color.SteelBlue;
+            btnEntrar.ForeColor = System.Drawing.Color.White;
+            btnEntrar.Click += new EventHandler(btnEntrar_Click);
         }
     }
 }
