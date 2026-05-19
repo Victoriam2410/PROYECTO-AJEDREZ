@@ -40,6 +40,18 @@ namespace AjedrezJuego
             txtUsuario.Location = new System.Drawing.Point(150, 78);
             txtUsuario.Size = new System.Drawing.Size(170, 23);
             txtUsuario.Font = new System.Drawing.Font("Arial", 10);
+             lblContrasena = new Label();
+             
+            lblContrasena.Text = "Contraseña:";
+            lblContrasena.Location = new System.Drawing.Point(60, 125);
+            lblContrasena.Size = new System.Drawing.Size(90, 23);
+            lblContrasena.Font = new System.Drawing.Font("Arial", 10);
+
+            txtContrasena = new TextBox();
+            txtContrasena.Location = new System.Drawing.Point(150, 123);
+            txtContrasena.Size = new System.Drawing.Size(170, 23);
+            txtContrasena.Font = new System.Drawing.Font("Arial", 10);
+            txtContrasena.PasswordChar = '*';
         }
     }
 }
