@@ -24,12 +24,22 @@ namespace AjedrezJuego
             this.BackColor = System.Drawing.Color.LightYellow;
 
             lblTitulo = new Label();
-            lblTitulo.Text = "===== JUEGO DE AJEDREZ =====";
+            lblTitulo.Text = "    JUEGO DE AJEDREZ    ";
             lblTitulo.Font = new System.Drawing.Font("Arial", 13, System.Drawing.FontStyle.Bold);
             lblTitulo.Location = new System.Drawing.Point(50, 20);
             lblTitulo.Size = new System.Drawing.Size(300, 30);
             lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
+            lblUsuario = new Label();
+            lblUsuario.Text = "Usuario:";
+            lblUsuario.Location = new System.Drawing.Point(60, 80);
+            lblUsuario.Size = new System.Drawing.Size(80, 23);
+            lblUsuario.Font = new System.Drawing.Font("Arial", 10);
+
+            txtUsuario = new TextBox();
+            txtUsuario.Location = new System.Drawing.Point(150, 78);
+            txtUsuario.Size = new System.Drawing.Size(170, 23);
+            txtUsuario.Font = new System.Drawing.Font("Arial", 10);
         }
     }
 }
